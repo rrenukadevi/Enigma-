@@ -1,0 +1,160 @@
+/* Overall App Styles */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #FF4500; /* Orange Red Background */
+  color: white;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #FFD700; /* Gold for the header text */
+}
+
+/* Task Controls */
+.task-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task-controls input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+  border: 2px solid #FFD700; /* Gold border for the search bar */
+  border-radius: 5px;
+}
+
+.task-controls button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.task-controls button:nth-child(2) {
+  background-color: #FFA500; /* Orange for the New Task button */
+}
+
+.task-controls button:nth-child(3) {
+  background-color: #FF6347; /* Red for the Refresh button */
+}
+
+.task-controls button:hover {
+  opacity: 0.9; /* Hover effect for buttons */
+}
+
+/* Task Form */
+.task-form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.task-form input {
+  padding: 8px;
+  width: 20%;
+  border-radius: 5px;
+  border: 1px solid #FFD700; /* Gold border for inputs */
+}
+
+.task-form button {
+  padding: 8px 15px;
+  background-color: #32CD32; /* Green for Add and Save buttons */
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #228B22; /* Darker Green on hover */
+}
+
+.task-form button:nth-child(6) {
+  background-color: #808080; /* Gray for Cancel button */
+}
+
+.task-form button:nth-child(6):hover {
+  background-color: #696969; /* Darker Gray for Cancel button hover */
+}
+
+/* Task Table */
+.task-table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2F4F4F; /* Dark Slate Gray for the table background */
+  color: white;
+}
+
+.task-table th {
+  padding: 10px;
+  background-color: #696969; /* Dark Gray for table header */
+  border: 1px solid #FFD700; /* Gold border for the table headers */
+}
+
+.task-table td {
+  padding: 10px;
+  border: 1px solid #FFD700; /* Gold border for table cells */
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #6A5ACD; /* Purple for action button */
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #483D8B; /* Darker Purple for action button hover */
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #FFFFFF; /* White background for dropdown */
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content button {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 10px 16px;
+  text-align: left;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #FFD700; /* Gold on hover for dropdown items */
+}
+
+/* Table Row Hover Effect */
+.task-table tr:hover {
+  background-color: #FF7F50; /* Coral for row hover effect */
+}
